@@ -1,0 +1,109 @@
+<section id="qualifications">
+    <h2 class="section-title">My Journey</h2>
+    <div class="timeline-container">
+        <div class="timeline-column">
+            <h3>Education</h3>
+            <div class="timeline-item">
+                <span class="date"><i class="fas fa-calendar-alt"></i> Jan 2023 - Dec 2024</span>
+                <h4>M.Sc. Data Analytics Engineering - George Mason University</h4>
+                <p>This degree equips me with the skills and knowledge needed for data-driven decision-making. My coursework covers a range of topics including data mining, information technology, statistical modeling, predictive analytics, optimization, risk analysis, and data visualization.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date"><i class="fas fa-calendar-alt"></i> Aug 2017 - May 2021</span>
+                <h4>Bachelors of Computer Science and Engineering - VBIT[JNTUH]</h4>
+                <p>I have successfully completed my Bachelor's at Vignana Bharathi Institute of Technology, Hyderabad, while honing practical abilities via capstone and industry projects.</p>
+            </div>
+        </div>
+        <div class="timeline-column">
+            <h3>Experience</h3>
+            <div class="timeline-item">
+                <span class="date"><i class="fas fa-calendar-alt"></i> April 2024 - Present</span>
+                <h4>Research Assistant - George Mason University [Deloitte]</h4>
+                <p>Collaborating with Deloitte on the Haystack Project to analyze agent movement patterns and manage geographical data, identifying anomalous agents through behavioral analysis, temporal patterns, and feature importance to uncover key insights.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date"><i class="fas fa-calendar-alt"></i> Aug 2021 - Dec 2022</span>
+                <h4>Business Intelligence Analyst - Infosys, India</h4>
+                <p>Streamlined data handling processes and enhanced decision-making by integrating AWS solutions and building visualizations, resulting in a 30% increase in efficiency. Focused on optimizing workflows and improving data accessibility for stakeholders.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #qualifications {
+        background-color: #0a192f;
+        font-family:"Times New Roman", Times, serif;
+        color: #8892b0;
+        padding: 2rem;
+        width: 100%;
+        max-width: 100%;
+    }
+    .section-title {
+        color: #ccd6f6;
+        font-family: Garamond, serif;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 0.4rem;
+    }
+    .timeline-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .timeline-column {
+        width: calc(80% - 1rem);
+    }
+    .timeline-column h3 {
+        font-family: Garamond, serif;
+        color: #64ffda;
+        font-size: 1.5rem;
+        margin-top: 30px; /* Increase this value to move the text further down */
+        padding-top: 20px;
+    }
+    .timeline-item {
+        background-color: #112240;
+        border: 1px solid #233554;
+        border-radius: 5px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #64ffda;
+        border-radius: 50%;
+        left: -5px;
+        top: 1.5rem;
+    }
+    .date {
+        font-size: 0.8rem;
+        color: #64ffda;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    .timeline-item h4 {
+        font-family: Garamond, serif;
+        color: #e6f1ff;
+        font-size: 1rem;
+        margin: 0 0 0.5rem 0;
+    }
+    .timeline-item p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin: 0;
+    }
+    @media (max-width: 768px) {
+        .timeline-container {
+            flex-direction: column;
+        }
+        .timeline-column {
+            width: 100%;
+        }
+    }
+</style>

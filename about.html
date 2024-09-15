@@ -1,0 +1,85 @@
+<section id="about" class="about-section">
+    <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <h3 class="subtitle">Data Analyst</h3>
+        <p class="about-text">
+            I'm a dynamic Data Analytics specialist, adept at delivering impactful projects across Natural-Language-Processing, AI/ML, and Business Intelligence. </p>
+        <p>My current role as a Research Assistant at George Mason University, collaborating with Deloitte, showcases my active contributions in advanced analytics. I've refined my expertise in knowledge graphs, agent movement pattern analysis, and urban mobility insights,and studied the anomalous and non-anomalous behaviour.</p>
+        <p> Alongside my M.Sc. in Data Analytics Engineering from George Mason University, With a strong foundation in data analysis methodologies and visualization tools, I've effectively tackled intricate challenges in urban planning and behavioral analytics. 
+            My approach integrates inductive and deductive reasoning to simplify complex data structures, driving data-informed decision-making in forward-thinking organizations.
+        </p>
+        <a href="#intro" class="button scrolly">Read More</a>
+    </div>
+</section>
+
+<style>
+    .about-section {
+        background-color: #0a192f;
+        font-family:"Times New Roman", Times, serif;
+        color: #8892b0;
+        padding: 3rem 2rem;
+        text-align: left;
+    }
+
+    .about-content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-family: Garamond, serif;
+        font-size: 1.5rem;
+        color: #ccd6f6;
+        margin-bottom: 0.4rem;
+        margin-top: -50px;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        color: #64ffda;
+        margin-top: 30px; /* Increase this value to move the text further down */
+        padding-top: 20px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: transparent;
+        color: #64ffda;
+        border: 2px solid #64ffda;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: rgba(100, 255, 218, 0.1);
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(100, 255, 218, 0.2);
+    }
+
+    .button:active {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px rgba(100, 255, 218, 0.2);
+    }
+</style>
+
+<script>
+    // Smooth scrolling for the "Read More" button
+    document.querySelector('.scrolly').addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+</script>

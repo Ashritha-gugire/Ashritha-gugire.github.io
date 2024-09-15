@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ashritha Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+				<div id="intro" class="intro-container">
+					<div class="intro-content">
+						<div class="intro-text">
+							<h2>Hi, I'm Ashritha</h2>
+							<h3 id="typing-effect"></h3>
+							<p>Experienced Data Analyst, skilled in deriving insights from intricate datasets. Proficient in advanced analytics, 
+								machine learning, and data visualization. Dedicated to utilizing data to drive informed decisions and foster innovation.</p>
+							<p><a href="assets/Resume/Resume_Ashritha.pdf" target="_blank" class="resume-link">Click to view my resume</a></p>
+							<div class="social-icons">
+								<a href="https://github.com/Ashritha-gugire" class="icon brands fa-github"><span class="label">GitHub</span></a>
+								<a href="https://www.linkedin.com/in/ashritha-gugire/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+							</div>
+							<a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a>
+						</div>
+						<div class="intro-image">
+							<img src="images/photo_color.jpeg" alt="Ashritha - Data Analyst" />
+						</div>
+					</div>
+				</div>
+				
+				<style>
+					.intro-container {
+						background-color: #0a192f;
+						color: #8892b0;
+						padding: 4rem 2rem;
+						min-height: 100vh;
+						display: flex;
+						align-items: center;
+					}
+				
+					.intro-content {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						max-width: 1200px;
+						margin: 0 auto;
+					}
+				
+					.intro-text {
+						flex: 1;
+						padding-right: 2rem;
+					}
+				
+					.intro-image {
+						flex: 0 0 40%;
+						max-width: 30%;
+					}
+				
+					.intro-image img {
+						width: 100%;
+						height: auto;
+						border-radius: 10px;
+						box-shadow: 0 0 20px rgba(0,0,0,0.3);
+					}
+					@keyframes subtleVerticalShake {
+        			0%, 100% { transform: translateY(0) translateX(0); }
+        			25% { transform: translateY(-8px) translateX(-2px); }
+        			75% { transform: translateY(8px) translateX(2px); }
+    				}
+
+    				.intro-image img {
+        			animation: subtleVerticalShake 2s ease-in-out infinite;
+    				}
+
+    /* Optional: Pause animation on hover */
+    				.intro-image img:hover {
+        			animation-play-state: paused;
+    				}
+				
+					h2 {
+						font-size: 2.5rem;
+						color: #ccd6f6;
+						margin-bottom: 0.5rem;
+					}
+				
+					#typing-effect {
+						font-size: 1.5rem;
+						color: #64ffda;
+						margin-bottom: 1rem;
+						min-height: 2.5em;
+					}
+				
+					p {
+						font-size: 1rem;
+						line-height: 1.6;
+						margin-bottom: 1.5rem;
+					}
+				
+					.button {
+						background-color: transparent;
+						color: #64ffda;
+						border: 1px solid #64ffda;
+						padding: 0.75rem 1.5rem;
+						text-decoration: none;
+						border-radius: 5px;
+						font-weight: bold;
+						transition: background-color 0.3s ease, color 0.3s ease;
+						display: inline-block;
+						margin-top: 1rem;
+					}
+				
+					.button:hover {
+						background-color: rgba(100, 255, 218, 0.1);
+					}
+				
+					.social-icons {
+						margin-bottom: 1rem;
+					}
+				
+					.social-icons a {
+						color: #ccd6f6;
+						font-size: 1.5rem;
+						margin-right: 1rem;
+						transition: color 0.3s ease;
+					}
+				
+					.social-icons a:hover {
+						color: #64ffda;
+					}
+				
+					@media screen and (max-width: 980px) {
+						.intro-content {
+							flex-direction: column-reverse;
+						}
+				
+						.intro-text, .intro-image {
+							flex: 1 1 100%;
+							max-width: 100%;
+							padding-right: 0;
+						}
+				
+						.intro-image {
+							margin-bottom: 2rem;
+						}
+					}
+				</style>
+				
+				<script>
+					const titles = [
+						"MS Data Analytics and Engineering - George Mason University",
+						"Research Assistant", 
+						"The Data Analyst"
+					];
+				
+					let titleIndex = 0;
+					let charIndex = 0;
+					let isDeleting = false;
+					const typingSpeed = 100;
+					const erasingSpeed = 50;
+					const delayBetweenTitles = 1000;
+				
+					function typeEffect() {
+						const currentTitle = titles[titleIndex];
+						const typingElement = document.getElementById('typing-effect');
+				
+						if (isDeleting) {
+							typingElement.textContent = currentTitle.substring(0, charIndex - 1);
+							charIndex--;
+						} else {
+							typingElement.textContent = currentTitle.substring(0, charIndex + 1);
+							charIndex++;
+						}
+				
+						if (!isDeleting && charIndex === currentTitle.length) {
+							isDeleting = true;
+							setTimeout(typeEffect, delayBetweenTitles);
+						} else if (isDeleting && charIndex === 0) {
+							isDeleting = false;
+							titleIndex = (titleIndex + 1) % titles.length;
+							setTimeout(typeEffect, typingSpeed);
+						} else {
+							setTimeout(typeEffect, isDeleting ? erasingSpeed : typingSpeed);
+						}
+					}
+				
+					document.addEventListener('DOMContentLoaded', typeEffect);
+				</script>
+
+
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="#intro">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#qualifications">Qualifications</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<section id="about"></section>
+						<section id="qualifications"></section>
+						<section id="projects"></section>
+						<section id="contact"></section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>11100 , Cavalier Courts, Apt 1B<br />
+								Fairfax City, VA, 22030</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">949-204-6952</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">agugire@gmu.edu</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const sections = ['about', 'qualifications', 'projects', 'skills', 'contact'];
+					
+					sections.forEach(section => {
+						fetch(`${section}.html`)
+							.then(response => response.text())
+							.then(html => {
+								const tempDiv = document.createElement('div');
+								tempDiv.innerHTML = html;
+								const content = tempDiv.querySelector(`#${section}`);
+								if (content) {
+									document.getElementById(section).appendChild(content);
+								}
+								
+								// Apply styles
+								const styles = tempDiv.querySelector('style');
+								if (styles) {
+									document.head.appendChild(styles);
+								}
+							})
+							.catch(error => console.error(`Error loading ${section}:`, error));
+					});
+				});
+			</script>
+
+	</body>
+</html>
