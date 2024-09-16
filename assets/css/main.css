@@ -3620,9 +3620,9 @@ input, select, textarea {
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
-		padding: 10px 0;
+		padding: 0;
 		position: relative;
-		width: 100%;
+		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -3703,7 +3703,7 @@ input, select, textarea {
 			#nav ul.links li {
 				display: block;
 				padding-left: 0;
-				margin: 0 15px;
+			
 			}
 
 				#nav ul.links li a {
