@@ -37,39 +37,46 @@
 				<style>
 
 					.nav {
-    					background-color: #4a4a4a !important;  /* Dark gray background */
-    					width: calc(100% - 4rem) !important;
-    					padding: 20px 0 !important;
+    						background-color: #4a4a4a !important;  /* Dark gray background */
+    						width: 100%!important;
+    						padding: 0 !important;
 					}
 
 					.nav ul.links {
-    					display: flex !important;
-    					justify-content: left !important;
-    					list-style-type: none !important;
-    					margin: 0 !important;
-    					padding: 0 !important;		
+    						display: flex !important;
+    						justify-content: center !important;
+    						list-style-type: none !important;
+    						margin: 0 !important;
+    						padding: 0 !important;		
 					}
 
 					.nav ul.links li {
-    					margin: 0 15px !important;
+    						margin: 0 !important;
 					}
 
 					.nav ul.links li a {
-    					color: #ffffff !important;  /* White text */
-    					text-decoration: none !important;
-    					font-weight: bold !important;
-    					font-size: 16px !important;
-    					transition: color 0.3s ease !important;
+    						color: #ffffff !important;  /* White text */
+	    					text-decoration: none !important;
+    						font-weight: bold !important;
+    						font-size: 16px !important;
+    						transition: color 0.3s ease !important;
+						padding: 20px 15px !important; /* Add padding to links for larger clickable area */
+    						display: block !important; 
+						
 					}
 
 					.nav ul.links li a:hover {
-    					color: #64ffda;  /* Teal color on hover */
+    						color: #64ffda;  /* Teal color on hover */
+						background-color: rgba(255, 255, 255, 0.1) !important;
 					}
 
 					.nav ul.links li.active a {
-    					color: #64ffda;  /* Teal color for active page */
+    						color: #64ffda;  /* Teal color for active page */
+						background-color: rgba(255, 255, 255, 0.1) !important;
 					}
-
+					#nav ul.links li.active {
+    						border-bottom: 2px solid #64ffda !important;
+					}
 					
 					.intro-container {
 						background-color: #0a192f;
@@ -232,13 +239,13 @@
 
 
 				<!-- Nav -->
-					<nav id="nav" style="background-color: #4a4a4a; width: 100%; padding: 10px 0;">
-    						<ul class="links" style="display: flex; justify-content: center; list-style-type: none; margin: 0; padding: 0;">
-        						<li style="margin: 0 15px;"><a href="#home" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 16px;">HOME</a></li>
-        						<li style="margin: 0 15px;"><a href="#about" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 16px;">ABOUT</a></li>
-        						<li style="margin: 0 15px;"><a href="#qualifications" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 16px;">QUALIFICATIONS</a></li>
-        						<li style="margin: 0 15px;"><a href="#projects" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 16px;">PROJECTS</a></li>
-        						<li style="margin: 0 15px;"><a href="#contact" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 16px;">CONTACT</a></li>
+					<<nav id="nav">
+    						<ul class="links">
+        						<li class="active"><a href="#home">Home</a></li>
+        						<li><a href="#about">About</a></li>
+        						<li><a href="#qualifications">Qualifications</a></li>
+        						<li><a href="#projects">Projects</a></li>
+        						<li><a href="#contact">Contact</a></li>
     						</ul>
 					</nav>
 
