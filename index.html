@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -34,6 +35,40 @@
 				</div>
 				
 				<style>
+
+					.nav {
+    					background-color: #4a4a4a;  /* Dark gray background */
+    					width: 100%;
+    					padding: 10px 0;
+					}
+
+					.nav ul.links {
+    					display: flex;
+    					justify-content: center;
+    					list-style-type: none;
+    					margin: 0;
+    					padding: 0;		
+					}
+
+					.nav ul.links li {
+    					margin: 0 15px;
+					}
+
+					.nav ul.links li a {
+    					color: #ffffff;  /* White text */
+    					text-decoration: none;
+    					font-weight: bold;
+    					font-size: 16px;
+    					transition: color 0.3s ease;
+					}
+
+					.nav ul.links li a:hover {
+    					color: #64ffda;  /* Teal color on hover */
+					}
+
+					.nav ul.links li.active a {
+    					color: #64ffda;  /* Teal color for active page */
+					}
 
 					
 					.intro-container {
