@@ -35,6 +35,37 @@
 				</div>
 				
 				<style>
+
+
+
+    `					#nav ul.links {
+        					display: flex;
+        					justify-content: flex-start;
+        					align-items: center;
+        					padding-left: 0;
+    					}
+    					#nav ul.links li {
+        					margin-right: 10px;
+    					}
+    					#nav ul.links li a {
+        					display: block;
+        					color: white;
+        					text-align: center;
+        					padding: 14px 20px;
+        					text-decoration: none;
+    					}
+    					#nav ul.links li.active a {
+        					color: #333333;
+        					background-color: white;
+        					font-weight: bold;
+    					}
+    					#nav ul.links li a:hover {
+        					background-color: #444444;
+    					}
+    					#nav ul.links li.active a:hover {
+        					background-color: white;
+        					color: #333333;
+    					}
 					.intro-container {
 						background-color: #0a192f;
 						color: #8892b0;
@@ -197,20 +228,20 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-    						<ul class="links" style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: space-between; align-items: center;">
-        						<li class="active" style="margin-left: 10px;">
-                						<a href="#intro" style="display: block; color: black; text-align: center; padding: 0px 15px; text-decoration: none; background-color: white; font-weight: bold;">Home</a>
+    						<ul class="links" style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: flex-start; align-items: center;">
+        						<li class="active" style="margin-right: 10px;">
+                						<a href="#intro" style="display: block; color: black; text-align: center; padding: 14px 20px; text-decoration: none; background-color: white; font-weight: bold;">Home</a>
             						</li>
-						        <li style="margin-left: 10px;">
+						        <li style="margin-right: 10px;">
                 						<a href="#about" style="display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none;">About</a>
             						</li>
-            						<li style="margin-left: 20px;">
+            						<li style="margin-right: 10px;">
                 						<a href="#qualifications" style="display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none;">Qualifications</a>
             						</li>
-            						<li style="margin-left: 20px;">
+            						<li style="margin-right: 10px;">
                 						<a href="#projects" style="display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none;">Projects</a>
             						</li>
-        						<li style="margin-left: 20px;">
+        						<li>
             							<a href="#contact" style="display: block; color: white; text-align: center; padding: 10px 15px; text-decoration: none;">Contact info</a>
        	 						</li>
     						</ul>
