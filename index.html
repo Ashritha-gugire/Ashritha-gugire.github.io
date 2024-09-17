@@ -150,68 +150,6 @@
 						.intro-image {
 							margin-bottom: 2rem;
 						}
-						
-						#footer {
-						        background-color: #0a192f;
-						        color: #8892b0;
-						        padding: 2rem;
-						        max-width: 800px;
-						        margin: 0 auto;
-						}
-
-						.contact-title {
-						        color: #ccd6f6;
-						        font-size: 2.5rem;
-						        text-align: center;
-						        margin-bottom: 2rem;
-						}
-
-						.fields {
-						        display: grid;
-						        grid-template-columns: 1fr 1fr;
-						        gap: 1rem;
-						}
-
-						.field {
-						        margin-bottom: 1rem;
-						}
-
-						.field:nth-child(5) {
-						        grid-column: 1 / -1;
-						}
-
-						input, textarea {
-						        width: 100%;
-						        padding: 0.75rem;
-						        background-color: #112240;
-						        border: 1px solid #64ffda;
-						        color: #ccd6f6;
-						        border-radius: 4px;
-    						}
-
-						textarea {
-						        resize: vertical;
-						}
-
-						.actions {
-						        text-align: center;
-						        margin-top: 1rem;
-						}
-						
-						input[type="submit"] {
-						        background-color: transparent;
-						        color: #64ffda;
-						        border: 1px solid #64ffda;
-						        padding: 0.75rem 2rem;
-						        font-size: 1rem;
-						        cursor: pointer;
-						        transition: background-color 0.3s ease, color 0.3s ease;
-						}
-						
-						input[type="submit"]:hover {
-						        background-color: rgba(100, 255, 218, 0.1);
-						}
-
 					}
 				</style>
 				
@@ -289,29 +227,42 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-    						<h2 class="contact-title">Contact Me!</h2>
-    						<form method="post" action="#">
-						        <div class="fields">
-            							<div class="field">
-                							<input type="text" name="name" id="name" placeholder="Full Name" />
-            							</div>
-            							<div class="field">
-                							<input type="email" name="email" id="email" placeholder="Email Address" />
-            							</div>
-            							<div class="field">
-                							<input type="tel" name="phone" id="phone" placeholder="Mobile Number" />
-            							</div>
-            							<div class="field">
-                							<input type="text" name="subject" id="subject" placeholder="Email Subject" />
-            							</div>
-            							<div class="field">
-                							<textarea name="message" id="message" rows="5" placeholder="Your Message"></textarea>
-            							</div>
-        						</div>
-        						<ul class="actions">
-            							<li><input type="submit" value="Send Message" class="primary" /></li>
-        						</ul>
-    						</form>
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>11100 , Cavalier Courts, Apt 1B<br />
+								Fairfax City, VA, 22030</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">949-204-6952</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">agugire@gmu.edu</a></p>
+							</section>
+						</section>
 					</footer>
 			</div>
 
