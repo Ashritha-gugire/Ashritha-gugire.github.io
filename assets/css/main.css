@@ -3955,7 +3955,7 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		background-color: #2b2a2a;
-		color: #909498;
+		color: #383c41;
 		cursor: default;
 		position: relative;
 		margin: 0 auto;
@@ -4295,6 +4295,24 @@ input, select, textarea {
 		#footer h3,
 		#footer p {
 			font-size: 0.8rem;
+		}
+		.inspiration {
+			text-align: center;
+			padding: 10px 0;
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
+			margin-top: 50px;
+		}
+	
+		.quote {
+			font-size: 0.8em;
+			color: #ac7998;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.smile {
+			font-size: 10rem;
+			color: #b2bd8b;
+			text-align: center;
 		}
 
 		@media screen and (max-width: 980px) {
